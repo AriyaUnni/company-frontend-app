@@ -19,7 +19,7 @@ export class AdminloginComponent implements OnInit {
       "password":this.password
     }
     if(this.username=="admin" && this.password=="12345"){
-      this.myrouter.navigate([])
+      this.myrouter.navigate(["/addemployee"])
     }else
     {
       alert("Invalid Credentials")
