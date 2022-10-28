@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import{ HttpClientModule } from '@angular/common/http';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
+import { TestingComponent } from './testing/testing.component';
 
 const appRoutes:Routes=[
 {
@@ -28,7 +29,8 @@ const appRoutes:Routes=[
     AdminloginComponent,
     NavbarComponent,
     AddemployeeComponent,
-    ViewemployeeComponent
+    ViewemployeeComponent,
+    TestingComponent
   ],
   imports: [
     BrowserModule,
