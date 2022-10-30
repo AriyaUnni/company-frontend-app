@@ -13,6 +13,7 @@ import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { TestingComponent } from './testing/testing.component';
 
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
+import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 
 const appRoutes:Routes=[
 {
@@ -26,6 +27,9 @@ const appRoutes:Routes=[
 },
 {
   path:"searchemployee",component:SearchemployeeComponent
+},
+{
+  path:"addsecurity",component:AddsecurityComponent
 }
 ]
 @NgModule({
@@ -37,7 +41,8 @@ const appRoutes:Routes=[
     ViewemployeeComponent,
     TestingComponent,
     
-    SearchemployeeComponent
+    SearchemployeeComponent,
+          AddsecurityComponent
   ],
   imports: [
     BrowserModule,
