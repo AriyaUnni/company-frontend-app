@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" name="name"[(ngModel)]="name" >
+                    
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readValues()">Search</button>
+                </div>
+
+                <div *ngFor="let i of data">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="">Employee Code</label>
+                        <input type="text" class="form-control" value="{{i.emp_code}}" [(ngModel)]="i.emp_code">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" value="{{i.name}}" [(ngModel)]="i.name">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="">Designation</label>
+                        <input type="text" class="form-control" value="{{i.designation}}" [(ngModel)]="i.designation">
+                    </div>
+                    
+                    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="">DOJ</label>
+                        <input type="text" class="form-control" value="{{i.doj}}" [(ngModel)]="i.doj">
+                    </div>
+                   
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="">Username</label>
+                        <input type="text" class="form-control" value="{{i.username}}" [(ngModel)]="i.username">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="">Password</label>
+                        <input type="text" class="form-control" value="{{i.password}}" [(ngModel)]="i.password">
+                    </div>
+                   
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"><br>
+                        <button class="btn btn-success" (click)="updateEmployee()">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
