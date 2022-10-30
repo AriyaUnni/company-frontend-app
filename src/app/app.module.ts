@@ -16,6 +16,7 @@ import { SearchemployeeComponent } from './searchemployee/searchemployee.compone
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
+import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
 
 const appRoutes:Routes=[
 {
@@ -52,7 +53,8 @@ const appRoutes:Routes=[
     SearchemployeeComponent,
           AddsecurityComponent,
           ViewsecurityComponent,
-          SearchsecurityComponent
+          SearchsecurityComponent,
+          EmployeeloginComponent
   ],
   imports: [
     BrowserModule,
