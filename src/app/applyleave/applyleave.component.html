@@ -1,0 +1,50 @@
+<app-empnavbar></app-empnavbar>
+     <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"><br>
+
+                <h4 style="text-align: center;">Apply for Leave</h4>
+        
+            <div class="row g-3">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Type</label>
+                    <select name="type"[(ngModel)]="type" id="" class="form-control">
+                        <option value="General Leave">General Leave</option>
+                        <option value="Medical Leave">Medical Leave</option>
+                        <option value="LOP">Loss Of Pay</option>
+                    </select>
+                </div>
+
+                
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Applied Date</label>
+                    <input type="datetime-local" name="applied_date"[(ngModel)]="applied_date" id="" class="form-control">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Leave Date</label>
+                    <input type="date" name="approveddate"[(ngModel)]="approveddate" id="" class="form-control">
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Number of Days</label>
+                    <input type="text" class="form-control"  name="duration"[(ngModel)]="duration">
+                </div>
+
+                
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Reason</label>
+                    <input type="text" class="form-control"  name="reason"[(ngModel)]="reason">
+                </div>
+                
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-danger" [disabled]="status" (click)="applyLeave()">Apply</button>
+                </div>
+            </div>
+       </div>
+     </div>
+</div>

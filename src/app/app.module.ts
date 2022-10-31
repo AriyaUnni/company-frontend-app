@@ -17,6 +17,11 @@ import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
+import { ApplyleaveComponent } from './applyleave/applyleave.component';
+import { SecurityloginComponent } from './securitylogin/securitylogin.component';
+import { CheckinComponent } from './checkin/checkin.component';
+import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const appRoutes:Routes=[
 {
@@ -39,6 +44,18 @@ const appRoutes:Routes=[
 },
 {
   path:"searchsecurity",component:SearchsecurityComponent
+},
+{
+  path:"employeelogin",component:EmployeeloginComponent
+},
+{
+  path:"applyleave",component:ApplyleaveComponent
+},
+{
+  path:"securitylogin",component:SecurityloginComponent
+},
+{
+  path:"checkin",component:CheckinComponent
 }
 ]
 @NgModule({
@@ -54,7 +71,12 @@ const appRoutes:Routes=[
           AddsecurityComponent,
           ViewsecurityComponent,
           SearchsecurityComponent,
-          EmployeeloginComponent
+          EmployeeloginComponent,
+          ApplyleaveComponent,
+          SecurityloginComponent,
+          CheckinComponent,
+          EmpnavbarComponent,
+          CheckoutComponent
   ],
   imports: [
     BrowserModule,

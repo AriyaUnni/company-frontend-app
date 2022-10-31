@@ -1,0 +1,28 @@
+<app-empnavbar></app-empnavbar>
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of dataCheck" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Employee Id</label>
+            <input type="text" class="form-control" value="{{i.empid}}" [(ngModel)]="i.empid">
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">CheckIn Time</label>
+            <input type="text" class="form-control" value="{{i.login_time}}" [(ngModel)]="i.login_time">
+            </div>
+            <br>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <button class="btn btn-success" (click)="checkOut(i.id)">Checkout</button>
+            </div>
+           
+         
+   
+    </div>
+       
+    </div>
+   
+            </div>
